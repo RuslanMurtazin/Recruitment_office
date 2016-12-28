@@ -34,6 +34,37 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+	  <plugin>
+                        <groupId>org.apache.tomcat.maven</groupId>
+                        <artifactId>tomcat7-maven-plugin</artifactId>
+                        <version>2.2</version>
+                        <configuration>
+                                                       
+                            <server>tomcat-development-server</server>
+                            <port>8080</port>
+                            <uriEncoding>UTF-8</uriEncoding>
+                            <connectorHttpProtocol>HTTP/1.1</connectorHttpProtocol>
+                            <address>0.0.0.0</address>
+                            <extraResources>
+                                <extraResource>
+                                    <directory>/src</directory>
+                                    <includes>
+                                        <include>log4j.propreties</include>                                        
+                                    </includes>
+                                </extraResource>
+                            </extraResources>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>mysql</groupId>
+                                <artifactId>mysql-connector-java</artifactId>
+                                <version>5.1.6</version>
+                            </dependency>
+
+                            
+                        </dependencies>
+                    </plugin>
+                
     </plugins>
   </build>
   <dependencies>
@@ -42,6 +73,28 @@
     <artifactId>mail</artifactId>
     <version>1.4.5</version>
 </dependency>
+      <dependency>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+          <version>1.2.17</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet.jsp</groupId>
+          <artifactId>jsp-api</artifactId>
+          <version>2.0</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.1.0</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
 
 </dependencies>
 
