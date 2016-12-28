@@ -7,7 +7,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/Recruitment_office/private/officer.jsp">Закрытый раздел</a>
         </li>
-        <li class="nav-item">
+         <li class="nav-item">
+                  <a class="nav-link" href="/Recruitment_office/sms.jsp">Отправить сообщение</a>
+                </li>
           
         </li>
       </ul>
