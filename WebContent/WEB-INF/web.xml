@@ -52,10 +52,21 @@
     <servlet-mapping>
         <servlet-name>OfficerController</servlet-name>
         <url-pattern>/private/OfficerController</url-pattern>
-    </servlet-mapping>  
-    
-   
-    
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>senderServlet</servlet-name>
+        <servlet-class>sms.senderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>senderServlet</servlet-name>
+        <url-pattern>/senderServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
     <security-constraint>
 
 <web-resource-collection>
