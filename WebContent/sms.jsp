@@ -24,7 +24,7 @@
 Введите номер:  <div class="control-group"><div class="controls"> <input class="form-control"
             type="number"  maxlength="11" name="phone" /> </div></div><br />
     Введите текст :  <div class="control-group"><div class="controls"> <input class="form-control"
-                type="text"  maxlength="70" name="message" pattern="^[a-zA-Z0-9]+$" required /> </div></div><br />
+                type="text"  maxlength="70" name="message" pattern="^[a-zA-Z0-9/s]+$" required /> </div></div><br />
 
 
     <p><input type="submit" value="Отправить"></p>
